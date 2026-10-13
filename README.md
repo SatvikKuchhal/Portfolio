@@ -58,7 +58,7 @@ All links use **relative anchor tags** (`<a href="...">`), so they work both:
 
 ---
 
-## 🛠️ Deliverable Details
+## 🛠️ Deliverable Details  
 
 ### 1. Portfolio — Builders Day Project (`index.html`)
 - High-contrast editorial / avant-garde design

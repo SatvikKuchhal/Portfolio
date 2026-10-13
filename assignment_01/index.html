@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Lab Assignment 1</title>
+    <!-- Separate External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Global Cross-Project Navigation Banner -->
+    <div class="project-banner">
+        <div class="banner-inner">
+            <span class="banner-tag">Assignment 01</span>
+            <span class="banner-desc">HTML + Introduction to CSS</span>
+            <div class="banner-links">
+                <a href="../index.html" class="banner-link">← Portfolio Home</a>
+                <a href="../assignment_02/index.html" class="banner-link">Assignment 02: Flexbox Quest →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 1 & Part 2: Header and Navigation -->
+    <header class="portal-header">
+        <h1>Student Portal</h1>
+        <p class="portal-subtitle">Academic Dashboard &amp; Course Management</p>
+        <nav class="portal-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="portal-container" id="home">
+
+        <!-- Welcome Message -->
+        <section class="welcome-box">
+            <p>Welcome back, <strong class="highlight">Rahul Sharma</strong>! Explore your academic progress, weekly lectures, and semester course registration below.</p>
+        </section>
+
+        <!-- Part 3: Student Profile Section -->
+        <section id="profile" class="portal-section">
+            <h2>Student Profile</h2>
+            <div class="profile-card">
+                <!-- ID Selector Demonstration & Bonus Top Performer Badge -->
+                <h3 id="student-name">
+                    Rahul Sharma 
+                    <span class="badge">Top Performer</span>
+                </h3>
+                <p>Enrolled Student in <span class="highlight">Computer Science</span></p>
+
+                <table class="data-table profile-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Field</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Name</strong></td>
+                            <td>Rahul Sharma</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Student ID</strong></td>
+                            <td>24BCE1001</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Program</strong></td>
+                            <td class="highlight">Computer Science</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Year</strong></td>
+                            <td>1st Year</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email</strong></td>
+                            <td><a href="mailto:rahul@example.com">rahul@example.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Part 4: My Skills Section -->
+        <section id="skills" class="portal-section">
+            <h2>My Skills</h2>
+            <p class="section-intro">Key technical proficiencies and tools developed during coursework:</p>
+            <ul class="skills-list">
+                <li><strong>HTML</strong> — Semantic structuring, forms, accessible tables</li>
+                <li><strong>CSS</strong> — Cascade, specificity, box model, visual hierarchy</li>
+                <li><strong>JavaScript</strong> — Fundamentals, DOM operations, ES6 syntax</li>
+                <li><strong>Python</strong> — Scripting, algorithms, basic data structures</li>
+                <li><strong>Git</strong> — Version control, branching, repository management</li>
+                <li><strong>SQL</strong> — Relational querying, schema design, constraints</li>
+            </ul>
+        </section>
+
+        <!-- Part 5: Weekly Schedule Section -->
+        <section id="schedule" class="portal-section">
+            <h2>Weekly Schedule</h2>
+            <p class="section-intro">Fall Semester 2026 Timetable (Monday through Friday):</p>
+            
+            <div class="table-wrapper">
+                <table class="data-table schedule-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">9:00 AM</th>
+                            <th scope="col">11:00 AM</th>
+                            <th scope="col">2:00 PM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="day-cell">Monday</th>
+                            <td>HTML</td>
+                            <td>Mathematics</td>
+                            <td>DSA</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="day-cell">Tuesday</th>
+                            <td>CSS</td>
+                            <td>DBMS</td>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="day-cell">Wednesday</th>
+                            <td>JavaScript</td>
+                            <td>DSA</td>
+                            <td>Mathematics</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="day-cell">Thursday</th>
+                            <td>DBMS</td>
+                            <td>HTML</td>
+                            <td>Project</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="day-cell">Friday</th>
+                            <td>DSA</td>
+                            <td>CSS</td>
+                            <td>Workshop</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Part 6: Course Registration Form Section -->
+        <section id="register" class="portal-section">
+            <h2>Course Registration</h2>
+            <p class="section-intro">Submit your preferences for the upcoming academic module.</p>
+
+            <form action="#" method="post" class="registration-form">
+                
+                <!-- Fieldset: Student Information -->
+                <fieldset class="form-group-box">
+                    <legend>Student Information</legend>
+                    
+                    <div class="form-row">
+                        <label for="student-full-name">Full Name:</label>
+                        <input type="text" id="student-full-name" name="studentName" value="Rahul Sharma" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="student-email">Email Address:</label>
+                        <input type="email" id="student-email" name="studentEmail" value="rahul@example.com" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="student-reg-id">Student ID:</label>
+                        <input type="text" id="student-reg-id" name="studentId" value="24BCE1001" required>
+                    </div>
+                </fieldset>
+
+                <!-- Fieldset: Course Selection -->
+                <fieldset class="form-group-box" id="courses">
+                    <legend>Course Selection</legend>
+                    
+                    <div class="form-row">
+                        <label for="course-select">Choose Course:</label>
+                        <select id="course-select" name="selectedCourse" required>
+                            <option value="">Select Course</option>
+                            <option value="html-css">HTML &amp; CSS</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="dsa">Data Structures</option>
+                            <option value="dbms">Database Management</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Fieldset: Preferred Learning Mode -->
+                <fieldset class="form-group-box">
+                    <legend>Preferred Learning Mode</legend>
+                    <p class="field-hint">Select one primary delivery format:</p>
+                    
+                    <div class="radio-option">
+                        <input type="radio" id="mode-online" name="learningMode" value="Online" checked>
+                        <label for="mode-online">Online (Virtual Classes &amp; Recorded Sessions)</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="mode-offline" name="learningMode" value="Offline">
+                        <label for="mode-offline">Offline (In-Person Campus Laboratory)</label>
+                    </div>
+                </fieldset>
+
+                <!-- Fieldset: Skills You Already Know -->
+                <fieldset class="form-group-box">
+                    <legend>Skills You Already Know</legend>
+                    <p class="field-hint">Check all technologies in which you have prior experience:</p>
+
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="skill-html" name="knownSkills" value="HTML" checked>
+                        <label for="skill-html">HTML (HyperText Markup Language)</label>
+                    </div>
+
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="skill-css" name="knownSkills" value="CSS" checked>
+                        <label for="skill-css">CSS (Cascading Style Sheets)</label>
+                    </div>
+
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="skill-js" name="knownSkills" value="JavaScript">
+                        <label for="skill-js">JavaScript (ECMAScript Programming)</label>
+                    </div>
+
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="skill-python" name="knownSkills" value="Python">
+                        <label for="skill-python">Python (General-Purpose Language)</label>
+                    </div>
+                </fieldset>
+
+                <!-- Form Action Buttons -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-submit">Submit Registration</button>
+                    <button type="reset" class="btn btn-reset">Reset Form</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Part 1 & 2: Footer -->
+    <footer class="portal-footer">
+        <p>&copy; 2026 Student Portal System — Computer Science Department.</p>
+        <p>Built with Semantic HTML &amp; Pure Introductory CSS (No Flexbox, No Grid, No JS).</p>
+        <p>
+            <a href="../index.html">Back to Portfolio</a> | 
+            <a href="../flexbox-quest/index.html">Next Lab: Flexbox Quest</a>
+        </p>
+    </footer>
+
+</body>
+</html>
